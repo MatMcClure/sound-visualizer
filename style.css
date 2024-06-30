@@ -33,3 +33,34 @@
   color: white;
   z-index: 100;
 }
+
+#link1, #link2, #link3 {
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+}
+
+#link1:hover, #link2:hover, #link3:hover{
+  color: #007BFF;
+}
+
+li {
+  margin: 50px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #007BFF;
+}
