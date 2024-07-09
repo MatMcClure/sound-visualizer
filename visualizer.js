@@ -68,7 +68,7 @@ file.addEventListener('change', function() {
 
 function drawVisualizer(bufferLength, x, barWidth, barHeight, dataArray) {
   for (let i = 0; i < bufferLength; i++) {
-    barHeight = dataArray[i] * 2;
+    barHeight = dataArray[i] * 3;
     const red = i * barHeight/20;
     const green = i * 4;
     const blue = barHeight/2;

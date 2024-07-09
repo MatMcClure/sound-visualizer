@@ -27,7 +27,7 @@ container.addEventListener('click', function() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     analyser.getByteFrequencyData(dataArray);
     for (let i = 0; i < bufferLength; i++) {
-      barHeight = dataArray[i] * 2;
+      barHeight = dataArray[i] * 3;
       ctx.fillStyle = 'white';
       ctx.fillRect(x, canvas.height - barHeight, barWidth, barHeight);
       x += barWidth;
