@@ -6,6 +6,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Music Visualizer</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    #fileupload {
+      margin: 5px;
+      margin-left: -90px;
+    }
+    #container {
+      text-align: center;
+    }
+    #youtubeLink, #loadVideo, #searchQuery, #searchButton {
+      margin: 10px;
+    }
+    #player {
+      display: none;
+    }
+    .search-result {
+      cursor: pointer;
+      padding: 5px;
+      border: 1px solid #ccc;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div id='container'>
+    <ul>
+      <li style="text-align: left; margin: 20px;">
+        <a href="home.html" id="link3"><u>Home</u></a>
+        <img src="placeholder.jpg" style="position: absolute; margin-left: 820px; width: 100px; height: 90px;">
+      </li>
+    </ul>
+    <canvas id="canvas1"></canvas>
+    <audio id="audio1" controls></audio>
+    <input type="text" id="youtubeLink" placeholder="Enter YouTube URL" />
+    <button id="loadVideo">Load Video</button>
+    <input type='file' id='fileupload' accept='audio/*' />
+    <input type="text" id="searchQuery" placeholder="Search YouTube" />
+    <button id="searchButton">Search</button>
+    <div id="searchResults"></div>
+  </div>
+
+  <div id="player"></div>
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="visualizer.js"></script>
+</body>
+</html>
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Visualizer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id='container'>
@@ -29,4 +84,4 @@
 
   <script src="visualizer.js"></script>
 </body>
-</html>
+</html> -->
